@@ -18,7 +18,13 @@ This repository is 🔋 battery packed with:
 
 ### 1. Clone this template using one of the three ways
 
-1. Use this repository as template
+1. Using `degit`
+
+   ```bash
+   npx degit choiruladamm/vite-ts-tailwind-starter YOUR_APP_NAME
+   ```
+
+2. Use this repository as template
 
    **Disclosure:** by using this repository as a template, there will be an attribution on your repository.
 
@@ -26,15 +32,9 @@ This repository is 🔋 battery packed with:
 
    ![Use as template](https://user-images.githubusercontent.com/55318172/129183039-1a61e68d-dd90-4548-9489-7b3ccbb35810.png)
 
-2. Using `degit`
-
-   ```bash
-   npx degit https://github.com/choiruladamm/vite-ts-tailwind-starter.git YOUR_APP_NAME
-   ```
-
 3. Deploy to Vercel
 
-   [![Deploy with Vercel](https://vercel.com/button)]
+   ![Deploy with Vercel](https://vercel.com/button)
 
 ### 2. Install dependencies
 
