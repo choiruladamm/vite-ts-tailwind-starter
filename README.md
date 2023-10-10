@@ -4,7 +4,7 @@
   <p>Made by <a href="https://choiruladamm.vercel.app/">Choirul Adamm</a></p>
 </div>
 
-## Features
+## Features (will keep updating new features)
 
 This repository is 🔋 battery packed with:
 
@@ -16,7 +16,7 @@ This repository is 🔋 battery packed with:
 
 ## Getting Started
 
-### 1. Clone this template using one of the three ways
+### 1. Clone this template using one of the two ways
 
 1. Using `degit`
 
@@ -30,7 +30,7 @@ This repository is 🔋 battery packed with:
 
    I'll appreciate if you do, so this template can be known by others too 😄
 
-   ![Use as template](https://user-images.githubusercontent.com/55318172/129183039-1a61e68d-dd90-4548-9489-7b3ccbb35810.png)
+   ![Use as template](https://github.com/choiruladamm/vite-ts-tailwind-starter/assets/109071310/d2072adf-4626-4cf8-83b8-7ab4d570c0cf)
 
 3. Deploy to Vercel
 
