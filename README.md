@@ -1,27 +1,53 @@
-# React + TypeScript + Vite
+<div align="center">
+  <h2>🔋 vite-ts-tailwind-starter</h2>
+  <p>🔋 Vite + Tailwind CSS + TypeScript + ShadcnUI starter template.</p>
+  <p>Made by <a href="https://choiruladamm.vercel.app/">Choirul Adamm</a></p>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
 
-Currently, two official plugins are available:
+This repository is 🔋 battery packed with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚡️ Vite
+- ⚛️ React 18
+- ✨ TypeScript
+- 💨 Tailwind CSS 3 
+- 💎 ShadcnUI
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 1. Clone this template using one of the three ways
 
-- Configure the top-level `parserOptions` property like this:
+1. Use this repository as template
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+   **Disclosure:** by using this repository as a template, there will be an attribution on your repository.
+
+   I'll appreciate if you do, so this template can be known by others too 😄
+
+   ![Use as template](https://user-images.githubusercontent.com/55318172/129183039-1a61e68d-dd90-4548-9489-7b3ccbb35810.png)
+
+2. Using `degit`
+
+   ```bash
+   npx degit https://github.com/choiruladamm/vite-ts-tailwind-starter.git YOUR_APP_NAME
+   ```
+
+3. Deploy to Vercel
+
+   [![Deploy with Vercel](https://vercel.com/button)]
+
+### 2. Install dependencies
+
+It is encouraged to use **npm** so the husky hooks can work properly.
+
+```bash
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 3. Run the development server
+
+You can start the server using this command:
+
+```bash
+npm run dev
+```
