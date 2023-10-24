@@ -1,6 +1,6 @@
 <div align="center">
-  <h2>🔋 vite-ts-tailwind-starter</h2>
-  <p>🔋 Vite + Tailwind CSS + TypeScript + ShadcnUI starter template.</p>
+  <h2>✨ vite-ts-tailwind-starter</h2>
+  <p>React + Tailwind CSS + TypeScript + shadcnui starter template.</p>
   <p>Made by <a href="https://choiruladamm.vercel.app/">Choirul Adamm</a></p>
 </div>
 
@@ -12,7 +12,7 @@ This repository is 🔋 battery packed with:
 - ⚛️ React 18
 - ✨ TypeScript
 - 💨 Tailwind CSS 3 
-- 💎 ShadcnUI
+- 💎 ShadcnUI — Beautifully designed components built with Radix UI and Tailwind CSS.
 - 💖 Prettier — Sorting Classes & Format your code consistently
 
 ## Getting Started
@@ -35,7 +35,8 @@ This repository is 🔋 battery packed with:
 
 3. Deploy to Vercel
 
-   ![Deploy with Vercel](https://vercel.com/button)
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
 
 ### 2. Install dependencies
 
