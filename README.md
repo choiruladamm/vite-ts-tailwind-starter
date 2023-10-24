@@ -1,5 +1,5 @@
 <div align="center">
-  <h2>✨ vite-ts-tailwind-starter</h2>
+  <h2>⚡️ vite-ts-tailwind-starter</h2>
   <p>React + Tailwind CSS + TypeScript + shadcnui starter template.</p>
   <p>Made by <a href="https://choiruladamm.vercel.app/">Choirul Adamm</a></p>
 </div>
@@ -39,8 +39,6 @@ This repository is 🔋 battery packed with:
 
 
 ### 2. Install dependencies
-
-It is encouraged to use **npm** so the husky hooks can work properly.
 
 ```bash
 npm install
