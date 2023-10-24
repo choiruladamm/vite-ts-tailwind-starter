@@ -9,8 +9,8 @@ const App: FC<AppProps> = ({}) => {
   return (
     <div className='layout relative flex min-h-screen flex-col items-center justify-center gap-6 text-center'>
       <div className='flex gap-4'>
-        <Icons.bolt className='h-16 w-16' />
-        <Icons.react className='h-16 w-16 text-sky-500' />
+        <Icons.bolt className='logo-bolt h-16 w-16 animate-pulse cursor-pointer' />
+        <Icons.react className='logo-react animate-spin-slow h-16 w-16 cursor-pointer text-sky-500' />
       </div>
       <div className='flex flex-col items-center gap-4 md:gap-2'>
         <h1 className='text-3xl font-bold'>
