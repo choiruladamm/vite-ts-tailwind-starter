@@ -78,4 +78,12 @@
 		max-width: 68.75rem;
 		@apply mx-auto w-11/12;
 	}
+
+	.logo-react:hover {
+		filter: drop-shadow(0 0 3em #61dafbaa);
+	}
+
+	.logo-bolt:hover {
+		filter: drop-shadow(0 0 3em #faa424);
+	}
 }
