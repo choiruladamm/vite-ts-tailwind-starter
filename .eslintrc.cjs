@@ -16,6 +16,7 @@ module.exports = {
     ],
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    'react/prop-types': 'off',
     'no-case-declarations': 'off',
     'no-empty-pattern': 'off',
     'no-unused-vars': 'off',
