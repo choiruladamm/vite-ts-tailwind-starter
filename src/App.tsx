@@ -10,13 +10,13 @@ const App: FC<AppProps> = ({}) => {
     <div className='layout relative flex min-h-screen flex-col items-center justify-center gap-6 text-center'>
       <div className='flex gap-4'>
         <Icons.bolt className='logo-bolt h-16 w-16 animate-pulse cursor-pointer' />
-        <Icons.react className='logo-react animate-spin-slow h-16 w-16 cursor-pointer text-sky-500' />
+        <Icons.react className='logo-react h-16 w-16 animate-spin-slow cursor-pointer text-sky-500' />
       </div>
       <div className='flex flex-col items-center gap-4 md:gap-2'>
-        <h1 className='text-3xl font-bold'>
+        <h1 className={cn('text-3xl')}>
           React.js + Tailwind CSS + TypeScript Starter
         </h1>
-        <p className='max-w-3xl text-sm text-gray-600 md:text-base'>
+        <p className='max-w-3xl text-gray-600'>
           A starter for React.js, Tailwind CSS, and TypeScript with{' '}
           <a
             target='_blank'
