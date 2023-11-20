@@ -1,16 +1,26 @@
 import { FC } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Icons } from './Icons';
 
 interface NavProps {}
 
 const Nav: FC<NavProps> = ({}) => {
+  const path = useLocation().pathname;
+
   return (
     <header className='absolute top-0 z-50 w-full py-3 text-slate-900 shadow-sm'>
       <div className='layout flex items-center justify-between '>
-        <div className='flex gap-4'>
+        <div className={'flex gap-4'}>
           {links.map((link) => (
-            <Link key={link.label} to={link.href}>
+            <Link
+              key={link.label}
+              to={link.href}
+              className={
+                path === link.href
+                  ? 'font-medium text-sky-500 transition-colors underline'
+                  : 'text-gray-600'
+              }
+            >
               {link.label}
             </Link>
           ))}
