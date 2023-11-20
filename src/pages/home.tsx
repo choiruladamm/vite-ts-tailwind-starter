@@ -1,11 +1,11 @@
+import { Icons } from '@/components/Icons';
+import { buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 import { FC } from 'react';
-import { Icons } from './components/Icons';
-import { cn } from './lib/utils';
-import { buttonVariants } from './components/ui/button';
 
-interface AppProps {}
+interface HomePageProps {}
 
-const App: FC<AppProps> = ({}) => {
+const HomePage: FC<HomePageProps> = ({}) => {
   return (
     <div className='layout relative flex min-h-screen flex-col items-center justify-center gap-6 text-center'>
       <div className='flex gap-4'>
@@ -52,4 +52,4 @@ const App: FC<AppProps> = ({}) => {
   );
 };
 
-export default App;
+export default HomePage;
