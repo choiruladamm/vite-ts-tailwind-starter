@@ -12,6 +12,7 @@ This repository is 🔋 battery packed with:
 - ⚛️ React 18
 - ✨ TypeScript
 - 💨 Tailwind CSS 3 
+- 🌪 React Router Dom 
 - 💎 ShadcnUI — Beautifully designed components built with Radix UI and Tailwind CSS.
 - 💖 Prettier — Sorting Classes & Format your code consistently
 
