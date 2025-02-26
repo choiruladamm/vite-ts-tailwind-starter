@@ -11,7 +11,7 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({}) => {
 				<div className='relative mb-8 md:mb-12'>
 					{/* Ghost animation container */}
 					<div className='animate-bounce'>
-						<Ghost className='mx-auto h-16 w-16  md:h-24 md:w-24' />
+						<Ghost className='mx-auto h-16 w-16 md:h-24 md:w-24' />
 					</div>
 
 					{/* Decorative circles */}
