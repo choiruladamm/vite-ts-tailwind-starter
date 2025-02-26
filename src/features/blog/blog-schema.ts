@@ -5,12 +5,12 @@
 import { z } from 'zod';
 
 export const blogSchema = z.object({
-  // contoh: id: z.string(),
-  // example: id: z.string(),
+	// contoh: id: z.string(),
+	// example: id: z.string(),
 });
 
 export const blogResponseSchema = z.object({
-  data: z.array(blogSchema),
+	data: z.array(blogSchema),
 });
 
 export type BlogType = z.infer<typeof blogSchema>;

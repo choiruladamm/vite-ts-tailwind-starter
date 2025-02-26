@@ -9,7 +9,7 @@ export const Nav: React.FC<NavProps> = ({}) => {
 
 	return (
 		<header className='absolute top-0 z-50 w-full py-3 text-slate-900 shadow-sm'>
-			<div className='layout flex items-center justify-between '>
+			<div className='layout flex items-center justify-between'>
 				<div className={'flex gap-4'}>
 					{links.map((link) => (
 						<Link

@@ -5,12 +5,12 @@
 import { z } from 'zod';
 
 export const homeSchema = z.object({
-  // contoh: id: z.string(),
-  // example: id: z.string(),
+	// contoh: id: z.string(),
+	// example: id: z.string(),
 });
 
 export const homeResponseSchema = z.object({
-  data: z.array(homeSchema),
+	data: z.array(homeSchema),
 });
 
 export type HomeType = z.infer<typeof homeSchema>;

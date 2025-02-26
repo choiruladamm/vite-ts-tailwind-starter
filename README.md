@@ -1,54 +1,50 @@
-<div align="center">
-  <h2>⚡️ vite-ts-tailwind-starter</h2>
-  <p>React + Tailwind CSS + TypeScript + shadcnui starter template.</p>
-  <p>Made by <a href="https://choiruladamm.vercel.app/">Choirul Adamm</a></p>
-</div>
+# React + TypeScript + Vite
 
-## Features (will keep updating new features)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-This repository is 🔋 battery packed with:
+Currently, two official plugins are available:
 
-- ⚡️ Vite
-- ⚛️ React 18
-- ✨ TypeScript
-- 💨 Tailwind CSS 3 
-- 🌪 React Router Dom 
-- 💎 ShadcnUI — Beautifully designed components built with Radix UI and Tailwind CSS.
-- 💖 Prettier — Sorting Classes & Format your code consistently
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Getting Started
+## Expanding the ESLint configuration
 
-### 1. Clone this template using one of the two ways
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-1. Using `degit`
+- Configure the top-level `parserOptions` property like this:
 
-   ```bash
-   npx degit choiruladamm/vite-ts-tailwind-starter YOUR_APP_NAME
-   ```
-
-2. Use this repository as template
-
-   **Disclosure:** by using this repository as a template, there will be an attribution on your repository.
-
-   I'll appreciate if you do, so this template can be known by others too 😄
-
-   ![Use as template](https://github.com/choiruladamm/vite-ts-tailwind-starter/assets/109071310/eff81e37-b2ab-4bc8-a4fc-f6dc40c1e225)
-
-3. Deploy to Vercel
-
-   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
-
-
-### 2. Install dependencies
-
-```bash
-npm install
+```js
+export default tseslint.config({
+	languageOptions: {
+		// other options...
+		parserOptions: {
+			project: ['./tsconfig.node.json', './tsconfig.app.json'],
+			tsconfigRootDir: import.meta.dirname,
+		},
+	},
+});
 ```
 
-### 3. Run the development server
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-You can start the server using this command:
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react';
 
-```bash
-npm run dev
+export default tseslint.config({
+	// Set the react version
+	settings: { react: { version: '18.3' } },
+	plugins: {
+		// Add the react plugin
+		react,
+	},
+	rules: {
+		// other rules...
+		// Enable its recommended rules
+		...react.configs.recommended.rules,
+		...react.configs['jsx-runtime'].rules,
+	},
+});
 ```

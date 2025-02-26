@@ -8,28 +8,42 @@ import BlogPage from '@/features/blog/_pages/blog-page';
 interface RootRouterProps {}
 
 const RootRouter: FC<RootRouterProps> = ({}) => {
-	const router = createBrowserRouter([
+	const router = createBrowserRouter(
+		[
+			{
+				path: '/',
+				element: <RootLayout />,
+				children: [
+					{
+						index: true,
+						element: <HomePage />,
+					},
+					{
+						path: 'blogs',
+						element: <BlogPage />,
+					},
+					{
+						path: '*',
+						element: <NotFoundPage />,
+					},
+				],
+			},
+		],
 		{
-			path: '/',
-			element: <RootLayout />,
-			children: [
-				{
-					index: true,
-					element: <HomePage />,
-				},
-				{
-					path: 'blogs',
-					element: <BlogPage />,
-				},
-				{
-					path: '*',
-					element: <NotFoundPage />,
-				},
-			],
+			future: {
+				v7_relativeSplatPath: true,
+			},
 		},
-	]);
+	);
 
-	return <RouterProvider router={router} />;
+	return (
+		<RouterProvider
+			router={router}
+			future={{
+				v7_startTransition: true,
+			}}
+		/>
+	);
 };
 
 export default RootRouter;
